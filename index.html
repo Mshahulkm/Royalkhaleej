@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Royal Khaleej Holidays — Premium Kerala Tours & Ayurveda</title>
+<meta name="description" content="Royal Khaleej Holidays — premium Kerala tour packages, houseboats, ayurveda retreats and hand-crafted itineraries with proudly serving travellers since 2022." />
+<meta property="og:title" content="Royal Khaleej Holidays — Kerala Travel Experts" />
+<meta property="og:description" content="Premium Kerala tour packages, houseboats, ayurveda and hand-crafted itineraries." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" href="images/logo.png" type="image/png" />
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<!-- AOS Animations -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --brand:#0e7a6b;
+    --brand-dark:#0a5b50;
+    --brand-soft:#e6f4f1;
+    --gold:#c9a24b;
+    --ink:#0d1b19;
+    --ink-dim:#4a5c58;
+    --line:#e6e8e7;
+    --bg:#fbfaf6;
+    --serif:'Fraunces',serif;
+    --sans:'Inter',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.6;overflow-x:hidden}
+  h1,h2,h3,h4,h5{font-family:var(--serif);font-weight:600;letter-spacing:-0.02em;color:var(--ink)}
+  .serif{font-family:var(--serif)}
+  a{color:inherit;text-decoration:none}
+  .text-brand{color:var(--brand)!important}
+  .bg-brand{background:var(--brand)!important;color:#fff!important}
+
+  /* ================= TOPBAR / NAV ================= */
+  .topbar{background:var(--brand-dark);color:#e6f4f1;font-size:13px;padding:8px 0}
+  .topbar a{color:#e6f4f1}
+  .topbar .sep{opacity:.4;margin:0 10px}
+
+  .navbar-rk{
+    background:rgba(255,255,255,.9);
+    backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line);
+    transition:.3s;
+    padding:10px 0;
+  }
+  .navbar-rk.scrolled{box-shadow:0 8px 24px rgba(0,0,0,.06)}
+  .navbar-brand{display:flex;align-items:center;gap:12px;font-family:var(--serif);font-weight:700;font-size:20px;color:var(--brand)!important}
+  .navbar-brand img{height:52px;width:52px;object-fit:contain}
+  .navbar-brand small{display:block;font-family:var(--sans);font-weight:500;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-dim);margin-top:-2px}
+  .nav-link{color:var(--ink)!important;font-weight:500;font-size:15px;position:relative;padding:8px 14px!important}
+  .nav-link::after{content:"";position:absolute;left:14px;right:14px;bottom:2px;height:2px;background:var(--brand);transform:scaleX(0);transform-origin:left;transition:.3s}
+  .nav-link:hover::after,.nav-link.active::after{transform:scaleX(1)}
+
+  .btn-brand{background:var(--brand);color:#fff;border:none;padding:11px 22px;border-radius:999px;font-weight:600;font-size:14px;transition:.3s;display:inline-flex;align-items:center;gap:8px}
+  .btn-brand:hover{background:var(--brand-dark);color:#fff;transform:translateY(-2px);box-shadow:0 10px 24px rgba(14,122,107,.35)}
+  .btn-outline-brand{background:transparent;border:1.5px solid var(--brand);color:var(--brand);padding:10px 22px;border-radius:999px;font-weight:600;font-size:14px;transition:.3s;display:inline-flex;align-items:center;gap:8px}
+  .btn-outline-brand:hover{background:var(--brand);color:#fff}
+  .btn-wa{background:#25D366;color:#fff;border:none;padding:11px 22px;border-radius:999px;font-weight:600;font-size:14px;display:inline-flex;align-items:center;gap:8px;transition:.3s}
+  .btn-wa:hover{background:#1ebd5b;color:#fff;transform:translateY(-2px);box-shadow:0 10px 24px rgba(37,211,102,.35)}
+
+  /* ================= HERO ================= */
+  .hero{position:relative;min-height:92vh;overflow:hidden;display:flex;align-items:center;color:#fff}
+  .hero-bg{position:absolute;inset:0;background:url('images/hero.jpg') center/cover;animation:kenburns 22s ease-in-out infinite alternate;z-index:0}
+  .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,27,25,.55) 0%,rgba(10,27,25,.75) 100%);z-index:1}
+  @keyframes kenburns{0%{transform:scale(1)}100%{transform:scale(1.12)}}
+  .hero .container{position:relative;z-index:2}
+  .hero h1{color:#fff;font-size:clamp(40px,6vw,80px);line-height:1.05;font-weight:600;max-width:900px}
+  .hero h1 em{color:var(--gold);font-style:italic;font-weight:400}
+  .hero p.lead{color:rgba(255,255,255,.85);max-width:620px;font-size:18px;margin-top:20px}
+  .hero-badge{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border:1px solid rgba(255,255,255,.35);border-radius:999px;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:#fff;backdrop-filter:blur(8px);background:rgba(255,255,255,.06)}
+  .hero-badge .dot{width:8px;height:8px;background:var(--gold);border-radius:50%;animation:pulse 2s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+  .hero-stats{display:flex;gap:44px;margin-top:50px;flex-wrap:wrap}
+  .hero-stats .s h3{color:#fff;font-size:36px;margin:0}
+  .hero-stats .s span{color:rgba(255,255,255,.7);font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+
+  .scroll-hint{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);color:#fff;font-size:11px;letter-spacing:.3em;text-transform:uppercase;z-index:3;opacity:.7}
+  .scroll-hint::after{content:"";display:block;width:1px;height:34px;background:#fff;margin:12px auto 0;animation:drop 1.8s infinite}
+  @keyframes drop{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+  /* ================= MARQUEE ================= */
+  .marquee{background:var(--ink);color:#fff;overflow:hidden;padding:22px 0;border-top:1px solid #1a2b28;border-bottom:1px solid #1a2b28}
+  .marquee-track{display:flex;gap:60px;animation:scroll 30s linear infinite;white-space:nowrap}
+  .marquee-track span{font-family:var(--serif);font-size:26px;color:rgba(255,255,255,.85);display:inline-flex;align-items:center;gap:60px}
+  .marquee-track span::after{content:"✦";color:var(--gold);margin-left:60px}
+  @keyframes scroll{to{transform:translateX(-50%)}}
+
+  /* ================= SECTIONS ================= */
+  section{padding:110px 0;position:relative}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--brand);font-size:12px;font-weight:600;letter-spacing:.25em;text-transform:uppercase;margin-bottom:16px}
+  .eyebrow::before{content:"";width:32px;height:1px;background:var(--brand)}
+  .sec-title{font-size:clamp(32px,4.5vw,54px);line-height:1.1;margin-bottom:20px}
+  .sec-title em{color:var(--brand);font-style:italic;font-weight:500}
+  .sec-sub{color:var(--ink-dim);font-size:17px;max-width:640px}
+
+  /* ================= ABOUT ================= */
+  .about-img-wrap{position:relative}
+  .about-img-wrap img{width:100%;border-radius:20px;box-shadow:0 30px 60px -20px rgba(0,0,0,.25)}
+  .about-badge{position:absolute;bottom:-28px;left:-28px;background:#fff;padding:24px 28px;border-radius:16px;box-shadow:0 20px 40px rgba(0,0,0,.1)}
+  .about-badge h3{color:var(--brand);font-size:44px;margin:0}
+  .about-badge span{color:var(--ink-dim);font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+  .feature-list{list-style:none;padding:0;margin:24px 0}
+  .feature-list li{padding:10px 0;display:flex;gap:14px;align-items:flex-start;color:var(--ink)}
+  .feature-list li i{color:var(--brand);margin-top:5px}
+
+  /* ================= SERVICES ================= */
+  .svc-card{background:#fff;padding:36px 30px;border-radius:16px;border:1px solid var(--line);height:100%;transition:.4s;position:relative;overflow:hidden}
+  .svc-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--brand);transform:scaleX(0);transform-origin:left;transition:.4s}
+  .svc-card:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,.08);border-color:var(--brand-soft)}
+  .svc-card:hover::before{transform:scaleX(1)}
+  .svc-icon{width:64px;height:64px;border-radius:14px;background:var(--brand-soft);color:var(--brand);display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:22px;transition:.4s}
+  .svc-card:hover .svc-icon{background:var(--brand);color:#fff}
+  .svc-card h3{font-size:22px;margin-bottom:10px}
+  .svc-card p{color:var(--ink-dim);font-size:15px;margin:0}
+
+  /* ================= DESTINATIONS ================= */
+  .dest{position:relative;border-radius:18px;overflow:hidden;height:380px}
+  .dest img{width:100%;height:100%;object-fit:cover;transition:1.2s}
+  .dest:hover img{transform:scale(1.1)}
+  .dest::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(10,27,25,.85) 100%)}
+  .dest-info{position:absolute;left:24px;right:24px;bottom:22px;color:#fff;z-index:2;transition:.4s}
+  .dest:hover .dest-info{transform:translateY(-8px)}
+  .dest-info small{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+  .dest-info h4{color:#fff;font-size:26px;margin:6px 0 0}
+
+  /* ================= PACKAGES ================= */
+  #packages{background:#fff}
+  .pkg-card{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;height:100%;display:flex;flex-direction:column;transition:.4s}
+  .pkg-card:hover{transform:translateY(-8px);box-shadow:0 24px 50px rgba(0,0,0,.1);border-color:var(--brand-soft)}
+  .pkg-img{position:relative;height:250px;overflow:hidden}
+  .pkg-img img{width:100%;height:100%;object-fit:cover;transition:1s}
+  .pkg-card:hover .pkg-img img{transform:scale(1.08)}
+  .pkg-tag{position:absolute;top:16px;left:16px;background:rgba(255,255,255,.95);color:var(--brand);padding:6px 14px;border-radius:999px;font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase}
+  .pkg-body{padding:28px;flex:1;display:flex;flex-direction:column}
+  .pkg-meta{display:flex;justify-content:space-between;color:var(--ink-dim);font-size:13px;margin-bottom:12px}
+  .pkg-meta .stars{color:var(--gold);letter-spacing:2px}
+  .pkg-body h3{font-size:22px;margin-bottom:10px}
+  .pkg-body p{color:var(--ink-dim);font-size:14.5px;flex:1;margin-bottom:20px}
+  .pkg-highlights{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+  .pkg-highlights span{background:var(--brand-soft);color:var(--brand);font-size:11.5px;padding:5px 11px;border-radius:999px;font-weight:600}
+  .pkg-foot{border-top:1px solid var(--line);padding-top:20px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+  .pkg-foot .pkg-note{color:var(--ink-dim);font-size:13px}
+  .pkg-foot .pkg-note strong{color:var(--brand);font-family:var(--serif);font-size:16px;font-weight:600}
+
+  /* ================= TESTIMONIALS ================= */
+  #testimonials{background:var(--ink);color:#fff}
+  #testimonials h2, #testimonials .eyebrow{color:#fff}
+  #testimonials .eyebrow{color:var(--gold)}
+  #testimonials .eyebrow::before{background:var(--gold)}
+  .testi-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:32px;height:100%;transition:.3s}
+  .testi-card:hover{background:rgba(255,255,255,.07);transform:translateY(-4px)}
+  .testi-card .stars{color:var(--gold);margin-bottom:14px}
+  .testi-card p{color:rgba(255,255,255,.85);font-style:italic;font-family:var(--serif);font-size:17px;line-height:1.55}
+  .testi-user{display:flex;align-items:center;gap:14px;margin-top:22px;padding-top:22px;border-top:1px solid rgba(255,255,255,.1)}
+  .avatar{width:48px;height:48px;border-radius:50%;background:var(--brand);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-family:var(--serif)}
+  .testi-user h5{color:#fff;margin:0;font-size:15px}
+  .testi-user span{color:rgba(255,255,255,.6);font-size:13px}
+
+  /* ================= CTA ================= */
+  .cta-band{background:linear-gradient(135deg,var(--brand) 0%,var(--brand-dark) 100%);color:#fff;padding:70px 0;border-radius:24px;position:relative;overflow:hidden}
+  .cta-band::before{content:"";position:absolute;top:-50%;right:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(255,255,255,.08),transparent 70%)}
+  .cta-band h2{color:#fff;font-size:clamp(28px,3.6vw,44px)}
+  .cta-band p{color:rgba(255,255,255,.85);max-width:520px;margin:12px 0 0}
+
+  /* ================= CONTACT ================= */
+  .info-card{display:flex;gap:16px;padding:22px;background:#fff;border:1px solid var(--line);border-radius:14px;margin-bottom:16px;transition:.3s}
+  .info-card:hover{border-color:var(--brand);transform:translateX(4px)}
+  .info-card .ico{width:48px;height:48px;border-radius:12px;background:var(--brand-soft);color:var(--brand);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+  .info-card h5{margin:0 0 4px;font-size:15px}
+  .info-card p{margin:0;color:var(--ink-dim);font-size:14px;line-height:1.5}
+  .form-control,.form-select{border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:15px;background:#fff}
+  .form-control:focus,.form-select:focus{border-color:var(--brand);box-shadow:0 0 0 4px rgba(14,122,107,.1)}
+  .form-label{font-size:13px;font-weight:600;color:var(--ink);margin-bottom:6px;letter-spacing:.03em}
+
+  /* ================= FOOTER ================= */
+  footer{background:var(--ink);color:rgba(255,255,255,.7);padding:70px 0 24px}
+  footer h5{color:#fff;font-size:16px;margin-bottom:20px}
+  footer a{color:rgba(255,255,255,.7);transition:.2s}
+  footer a:hover{color:var(--gold)}
+  footer ul{list-style:none;padding:0}
+  footer ul li{margin-bottom:10px;font-size:14.5px}
+  .social a{width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.15);display:inline-flex;align-items:center;justify-content:center;margin-right:8px;transition:.3s}
+  .social a:hover{background:var(--brand);border-color:var(--brand);color:#fff!important;transform:translateY(-3px)}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:50px;padding-top:24px;text-align:center;font-size:13px;color:rgba(255,255,255,.5)}
+
+  /* ================= WHATSAPP FAB ================= */
+  .wa-fab{position:fixed;bottom:24px;right:24px;width:60px;height:60px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:28px;box-shadow:0 10px 30px rgba(37,211,102,.4);z-index:999;transition:.3s;animation:waPulse 2s infinite}
+  .wa-fab:hover{transform:scale(1.1);color:#fff}
+  @keyframes waPulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.5)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+
+  @media (max-width:768px){
+    section{padding:70px 0}
+    .about-badge{position:relative;left:0;bottom:0;margin-top:20px;display:inline-block}
+    .hero{min-height:80vh}
+    .hero-stats{gap:24px}
+    .hero-stats .s h3{font-size:28px}
+  }
+
+  /* ===== Enhanced service cards with images ===== */
+  .svc-card{padding:0;overflow:hidden;display:flex;flex-direction:column}
+  .svc-media{position:relative;height:220px;overflow:hidden}
+  .svc-media img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1),filter .6s}
+  .svc-card:hover .svc-media img{transform:scale(1.12) rotate(.5deg);filter:saturate(1.15)}
+  .svc-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,27,25,0) 40%,rgba(10,27,25,.55) 100%)}
+  .svc-media .svc-icon{position:absolute;left:20px;bottom:-28px;width:60px;height:60px;border-radius:16px;font-size:24px;box-shadow:0 12px 28px rgba(14,122,107,.35);z-index:2;margin:0;background:#fff;color:var(--brand);border:3px solid #fff;transition:.5s}
+  .svc-card:hover .svc-media .svc-icon{background:var(--brand);color:#fff;transform:translateY(-6px) rotate(-6deg)}
+  .svc-body{padding:44px 28px 30px}
+  .svc-body h3{font-size:22px;margin:0 0 10px}
+  .svc-body p{color:var(--ink-dim);font-size:15px;margin:0 0 14px}
+  .svc-more{color:var(--brand);font-weight:600;font-size:14px;display:inline-flex;align-items:center;gap:8px;opacity:0;transform:translateX(-6px);transition:.4s}
+  .svc-card:hover .svc-more{opacity:1;transform:translateX(0)}
+  .svc-more i{transition:.4s}
+  .svc-card:hover .svc-more i{transform:translateX(4px)}
+
+  /* ===== Global smooth transitions ===== */
+  .btn,.svc-card,.pkg-card,.dest,.testi-card,.info-card{transition:transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .5s,background .3s,color .3s,border-color .3s}
+
+  /* ===== Reveal on scroll (custom, on top of AOS) ===== */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ===== Floating parallax blob accents ===== */
+  #services::before,#packages::before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(14,122,107,.10),transparent 70%);top:-120px;right:-120px;z-index:0;animation:float 12s ease-in-out infinite}
+  #services::after{content:"";position:absolute;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(201,162,75,.12),transparent 70%);bottom:-100px;left:-100px;z-index:0;animation:float 14s ease-in-out infinite reverse}
+  @keyframes float{0%,100%{transform:translate(0,0)}50%{transform:translate(20px,-30px)}}
+  #services .container,#packages .container{position:relative;z-index:1}
+
+  /* ===== Button ripple/gloss ===== */
+  .btn-brand,.btn-wa{position:relative;overflow:hidden}
+  .btn-brand::after,.btn-wa::after{content:"";position:absolute;top:0;left:-120%;width:60%;height:100%;background:linear-gradient(120deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);transition:left .8s}
+  .btn-brand:hover::after,.btn-wa:hover::after{left:140%}
+
+  /* ===== Counter shine on hero stats ===== */
+  .hero-stats .s h3{background:linear-gradient(120deg,#fff 0%,#fff 40%,var(--gold) 50%,#fff 60%,#fff 100%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 6s linear infinite}
+  @keyframes shine{0%{background-position:200% 0}100%{background-position:-200% 0}}
+
+  /* ===== Nav link smoothing ===== */
+  .nav-link{transition:color .3s}
+  .navbar-rk{transition:background .4s,box-shadow .4s,padding .3s}
+  .navbar-rk.scrolled{padding:6px 0;background:rgba(255,255,255,.96)}
+
+  @media (max-width:768px){
+    .svc-media{height:190px}
+    .hero-stats{gap:26px}
+  }
+
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar d-none d-md-block">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div>
+      <i class="fa-solid fa-location-dot me-2"></i>Near Cochin Airport, Ernakulam, Kerala
+      <span class="sep">|</span>
+      <i class="fa-regular fa-envelope me-2"></i>royalkhaleejholidays@gmail.com
+    </div>
+    <div>
+      <i class="fa-solid fa-phone me-2"></i>+91 8547301275
+      <span class="sep">|</span>
+      <a href="#"><i class="fa-brands fa-facebook-f mx-2"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram mx-2"></i></a>
+      <a href="https://wa.me/918547301275"><i class="fa-brands fa-whatsapp mx-2"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-rk sticky-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="#home">
+      <img src="images/logo.png" alt="Royal Khaleej Holidays">
+      <span>Royal Khaleej<small>Holidays</small></span>
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <a href="https://wa.me/918547301275?text=Hi%20Royal%20Khaleej%2C%20I%27d%20like%20to%20book%20a%20Kerala%20trip." class="btn btn-wa d-none d-lg-inline-flex">
+        <i class="fa-brands fa-whatsapp"></i> Book on WhatsApp
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="container">
+    <span class="hero-badge" data-aos="fade-down"><span class="dot"></span> Crafting Kerala Journeys Since 2022</span>
+    <h1 data-aos="fade-up" data-aos-delay="150">Discover <em>God's Own</em><br>Country, Beautifully.</h1>
+    <p class="lead" data-aos="fade-up" data-aos-delay="300">Backwaters, misty hills, spice trails, ayurveda and heritage — hand-crafted Kerala holidays for discerning travellers from the Gulf and beyond.</p>
+    <div class="d-flex flex-wrap gap-3 mt-4" data-aos="fade-up" data-aos-delay="450">
+      <a href="#packages" class="btn btn-brand">Explore Packages <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="https://wa.me/918547301275?text=Hi%20Royal%20Khaleej%2C%20I%27d%20like%20to%20plan%20a%20Kerala%20trip." class="btn btn-wa"><i class="fa-brands fa-whatsapp"></i> Chat with Us</a>
+    </div>
+    <div class="hero-stats" data-aos="fade-up" data-aos-delay="600">
+      <div class="s"><h3>2022</h3><span>Established</span></div>
+      <div class="s"><h3>100+</h3><span>Happy Customers</span></div>
+      <div class="s"><h3>40+</h3><span>Curated Itineraries</span></div>
+      <div class="s"><h3>24/7</h3><span>On-trip Support</span></div>
+    </div>
+  </div>
+  <div class="scroll-hint">Scroll</div>
+</header>
+
+<!-- MARQUEE -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>Backwaters<span style="color:var(--gold);margin:0 60px">✦</span>Ayurveda<span style="color:var(--gold);margin:0 60px">✦</span>Hill Stations<span style="color:var(--gold);margin:0 60px">✦</span>Houseboats<span style="color:var(--gold);margin:0 60px">✦</span>Wildlife<span style="color:var(--gold);margin:0 60px">✦</span>Culture<span style="color:var(--gold);margin:0 60px">✦</span></span>
+    <span>Backwaters<span style="color:var(--gold);margin:0 60px">✦</span>Ayurveda<span style="color:var(--gold);margin:0 60px">✦</span>Hill Stations<span style="color:var(--gold);margin:0 60px">✦</span>Houseboats<span style="color:var(--gold);margin:0 60px">✦</span>Wildlife<span style="color:var(--gold);margin:0 60px">✦</span>Culture<span style="color:var(--gold);margin:0 60px">✦</span></span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6" data-aos="fade-right">
+        <div class="about-img-wrap">
+          <img src="images/about.jpg" alt="About Royal Khaleej Holidays">
+          <div class="about-badge"><h3>2022</h3><span>Trusted Since</span></div>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <span class="eyebrow">About Us</span>
+        <h2 class="sec-title">Kerala, the way it was <em>meant</em> to be experienced.</h2>
+        <p class="sec-sub">Royal Khaleej Holidays is a Kerala-based travel house specialising in premium leisure trips, ayurveda retreats and medical tourism for guests from the Gulf region. Every itinerary is designed by locals who know the land, the language and the little moments that make a journey unforgettable.</p>
+        <ul class="feature-list">
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Hand-crafted itineraries</strong> — no cookie-cutter packages. Everything tailored to your pace.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Arabic & English speaking guides</strong> for a comfortable, familiar experience.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Verified premium hotels & houseboats</strong> — we've stayed in every one we recommend.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>24/7 on-trip support</strong> from arrival to your flight home.</span></li>
+        </ul>
+        <a href="#contact" class="btn btn-outline-brand">Plan My Trip <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" style="background:#fff">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="eyebrow">What We Offer</span>
+      <h2 class="sec-title">Journeys crafted for <em>every</em> kind of traveller.</h2>
+      <p class="sec-sub mx-auto">Six signature experiences — each one designed, tested and loved by our team.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <div class="svc-card">
+          <div class="svc-media"><img src="images/alleppey.jpg" alt="Leisure Tours"><div class="svc-icon"><i class="fa-solid fa-umbrella-beach"></i></div></div>
+          <div class="svc-body"><h3>Leisure Tours</h3><p>Family holidays, honeymoons, and slow travel across Kerala's most iconic destinations.</p><span class="svc-more">Explore <i class="fa-solid fa-arrow-right"></i></span></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="svc-card">
+          <div class="svc-media"><img src="images/ayurveda.jpg" alt="Ayurveda Retreats"><div class="svc-icon"><i class="fa-solid fa-spa"></i></div></div>
+          <div class="svc-body"><h3>Ayurveda Retreats</h3><p>Authentic panchakarma and wellness stays at certified centres with in-house physicians.</p><span class="svc-more">Explore <i class="fa-solid fa-arrow-right"></i></span></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="svc-card">
+          <div class="svc-media"><img src="images/about.jpg" alt="Medical Tourism"><div class="svc-icon"><i class="fa-solid fa-briefcase-medical"></i></div></div>
+          <div class="svc-body"><h3>Medical Tourism</h3><p>End-to-end coordination with top hospitals — treatment, recovery stays and airport transfers.</p><span class="svc-more">Explore <i class="fa-solid fa-arrow-right"></i></span></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <div class="svc-card">
+          <div class="svc-media"><img src="images/trek.jpg" alt="Trekking Tours"><div class="svc-icon"><i class="fa-solid fa-mountain"></i></div></div>
+          <div class="svc-body"><h3>Trekking Tours</h3><p>Guided treks through the Western Ghats — from easy walks to summits and camping.</p><span class="svc-more">Explore <i class="fa-solid fa-arrow-right"></i></span></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="svc-card">
+          <div class="svc-media"><img src="images/wayanad.jpg" alt="Private Houseboats"><div class="svc-icon"><i class="fa-solid fa-ship"></i></div></div>
+          <div class="svc-body"><h3>Private Houseboats</h3><p>Overnight cruises through Alleppey and Kumarakom with chef-prepared local meals.</p><span class="svc-more">Explore <i class="fa-solid fa-arrow-right"></i></span></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="svc-card">
+          <div class="svc-media"><img src="images/kochi.jpg" alt="Airport Transfers"><div class="svc-icon"><i class="fa-solid fa-plane-departure"></i></div></div>
+          <div class="svc-body"><h3>Airport Transfers</h3><p>Luxury sedans and vans with English/Arabic drivers, meeting you at arrivals.</p><span class="svc-more">Explore <i class="fa-solid fa-arrow-right"></i></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DESTINATIONS -->
+<section id="destinations">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-end flex-wrap mb-5" data-aos="fade-up">
+      <div>
+        <span class="eyebrow">Destinations</span>
+        <h2 class="sec-title mb-0">Where you'll <em>wander</em>.</h2>
+      </div>
+      <p class="sec-sub mb-0">Five signature regions we know inside-out — chosen for beauty, hospitality and story.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in"><div class="dest"><img src="images/kochi.jpg" alt="Fort Kochi"><div class="dest-info"><small>Coastal Heritage</small><h4>Fort Kochi</h4></div></div></div>
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100"><div class="dest"><img src="images/alleppey.jpg" alt="Alleppey"><div class="dest-info"><small>Backwaters</small><h4>Alleppey</h4></div></div></div>
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200"><div class="dest"><img src="images/munnar.jpg" alt="Munnar"><div class="dest-info"><small>Hill Station</small><h4>Munnar</h4></div></div></div>
+      <div class="col-md-6 col-lg-6" data-aos="zoom-in"><div class="dest"><img src="images/wayanad.jpg" alt="Wayanad"><div class="dest-info"><small>Wildlife & Forests</small><h4>Wayanad</h4></div></div></div>
+      <div class="col-md-6 col-lg-6" data-aos="zoom-in" data-aos-delay="100"><div class="dest"><img src="images/trek.jpg" alt="Thekkady"><div class="dest-info"><small>Spice Trails</small><h4>Thekkady</h4></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section id="packages">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="eyebrow">Signature Packages</span>
+      <h2 class="sec-title">Awesome <em>packages</em> for every traveller.</h2>
+      <p class="sec-sub mx-auto">Message us on WhatsApp for a personalised quote — every itinerary is customised to your dates, group size and interests.</p>
+    </div>
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <div class="pkg-card">
+          <div class="pkg-img"><img src="images/ayurveda.jpg" alt="Ayurveda Retreat"><span class="pkg-tag">Wellness</span></div>
+          <div class="pkg-body">
+            <div class="pkg-meta"><span><i class="fa-regular fa-clock me-1"></i> 7 Days · 6 Nights</span><span class="stars">★★★★★</span></div>
+            <h3>Ayurveda Rejuvenation</h3>
+            <p>Authentic panchakarma at a certified centre — daily therapies, sattvic meals, yoga at sunrise.</p>
+            <div class="pkg-highlights"><span>Panchakarma</span><span>Yoga</span><span>Beach stay</span></div>
+            <div class="pkg-foot">
+              <div class="pkg-note">Starting from<br><strong>Kovalam, Kerala</strong></div>
+              <a href="https://wa.me/918547301275?text=Hi%2C%20I%27m%20interested%20in%20the%20Ayurveda%20Rejuvenation%20package%20(7D%2F6N).%20Please%20share%20details." class="btn btn-wa"><i class="fa-brands fa-whatsapp"></i> Book</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="pkg-card">
+          <div class="pkg-img"><img src="images/munnar.jpg" alt="Munnar Package"><span class="pkg-tag">Mountain</span></div>
+          <div class="pkg-body">
+            <div class="pkg-meta"><span><i class="fa-regular fa-clock me-1"></i> 5 Days · 4 Nights</span><span class="stars">★★★★★</span></div>
+            <h3>Misty Munnar Escape</h3>
+            <p>Rolling tea gardens, cool mountain air, spice plantation walks and Eravikulam National Park.</p>
+            <div class="pkg-highlights"><span>Tea gardens</span><span>Trekking</span><span>Resort stay</span></div>
+            <div class="pkg-foot">
+              <div class="pkg-note">Starting from<br><strong>Kochi → Munnar</strong></div>
+              <a href="https://wa.me/918547301275?text=Hi%2C%20I%27m%20interested%20in%20the%20Misty%20Munnar%20Escape%20package%20(5D%2F4N).%20Please%20share%20details." class="btn btn-wa"><i class="fa-brands fa-whatsapp"></i> Book</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="pkg-card">
+          <div class="pkg-img"><img src="images/alleppey.jpg" alt="Backwater Cruise"><span class="pkg-tag">Cruise</span></div>
+          <div class="pkg-body">
+            <div class="pkg-meta"><span><i class="fa-regular fa-clock me-1"></i> 4 Days · 3 Nights</span><span class="stars">★★★★★</span></div>
+            <h3>Backwater Houseboat</h3>
+            <p>Private houseboat through Alleppey's palm-lined canals, chef on board, sunset on deck.</p>
+            <div class="pkg-highlights"><span>Private boat</span><span>All meals</span><span>Village walk</span></div>
+            <div class="pkg-foot">
+              <div class="pkg-note">Starting from<br><strong>Alleppey</strong></div>
+              <a href="https://wa.me/918547301275?text=Hi%2C%20I%27m%20interested%20in%20the%20Backwater%20Houseboat%20package%20(4D%2F3N).%20Please%20share%20details." class="btn btn-wa"><i class="fa-brands fa-whatsapp"></i> Book</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <div class="pkg-card">
+          <div class="pkg-img"><img src="images/wayanad.jpg" alt="Wayanad Wildlife"><span class="pkg-tag">Wildlife</span></div>
+          <div class="pkg-body">
+            <div class="pkg-meta"><span><i class="fa-regular fa-clock me-1"></i> 4 Days · 3 Nights</span><span class="stars">★★★★★</span></div>
+            <h3>Wayanad Wild Trails</h3>
+            <p>Bamboo forests, waterfalls, tribal culture and jeep safaris in one of Kerala's greenest districts.</p>
+            <div class="pkg-highlights"><span>Jeep safari</span><span>Waterfalls</span><span>Jungle resort</span></div>
+            <div class="pkg-foot">
+              <div class="pkg-note">Starting from<br><strong>Kochi → Wayanad</strong></div>
+              <a href="https://wa.me/918547301275?text=Hi%2C%20I%27m%20interested%20in%20the%20Wayanad%20Wild%20Trails%20package%20(4D%2F3N).%20Please%20share%20details." class="btn btn-wa"><i class="fa-brands fa-whatsapp"></i> Book</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="pkg-card">
+          <div class="pkg-img"><img src="images/kochi.jpg" alt="Kochi Heritage"><span class="pkg-tag">Heritage</span></div>
+          <div class="pkg-body">
+            <div class="pkg-meta"><span><i class="fa-regular fa-clock me-1"></i> 3 Days · 2 Nights</span><span class="stars">★★★★★</span></div>
+            <h3>Fort Kochi Heritage</h3>
+            <p>Colonial streets, Chinese fishing nets, spice markets and a Kathakali performance under lamps.</p>
+            <div class="pkg-highlights"><span>Heritage hotel</span><span>Food tour</span><span>Art & culture</span></div>
+            <div class="pkg-foot">
+              <div class="pkg-note">Starting from<br><strong>Fort Kochi</strong></div>
+              <a href="https://wa.me/918547301275?text=Hi%2C%20I%27m%20interested%20in%20the%20Fort%20Kochi%20Heritage%20package%20(3D%2F2N).%20Please%20share%20details." class="btn btn-wa"><i class="fa-brands fa-whatsapp"></i> Book</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="pkg-card">
+          <div class="pkg-img"><img src="images/culture.jpg" alt="Grand Kerala"><span class="pkg-tag">Grand Tour</span></div>
+          <div class="pkg-body">
+            <div class="pkg-meta"><span><i class="fa-regular fa-clock me-1"></i> 10 Days · 9 Nights</span><span class="stars">★★★★★</span></div>
+            <h3>Grand Kerala Odyssey</h3>
+            <p>The full arc — Kochi, Munnar, Thekkady, Alleppey and Kovalam beach. Our most-loved trip.</p>
+            <div class="pkg-highlights"><span>All highlights</span><span>Premium stays</span><span>Private car</span></div>
+            <div class="pkg-foot">
+              <div class="pkg-note">Starting from<br><strong>Kochi Airport</strong></div>
+              <a href="https://wa.me/918547301275?text=Hi%2C%20I%27m%20interested%20in%20the%20Grand%20Kerala%20Odyssey%20package%20(10D%2F9N).%20Please%20share%20details." class="btn btn-wa"><i class="fa-brands fa-whatsapp"></i> Book</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="eyebrow">Traveller Stories</span>
+      <h2 class="sec-title">Trusted by <em>families</em> across the Gulf.</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="fade-up"><div class="testi-card"><div class="stars">★★★★★</div><p>"From airport pickup to the last farewell, everything felt personal. Our houseboat in Alleppey was straight out of a dream."</p><div class="testi-user"><div class="avatar">AM</div><div><h5>Ahmed Al-Marri</h5><span>Doha, Qatar</span></div></div></div></div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100"><div class="testi-card"><div class="stars">★★★★★</div><p>"My ayurveda retreat was life-changing. The team understood exactly what I needed and the resort they chose was pure magic."</p><div class="testi-user"><div class="avatar">SN</div><div><h5>Sara Nassar</h5><span>Dubai, UAE</span></div></div></div></div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200"><div class="testi-card"><div class="stars">★★★★★</div><p>"We travelled with three generations. Everyone had something to love — even the kids didn't want to leave Munnar."</p><div class="testi-user"><div class="avatar">FK</div><div><h5>Fatima Khalid</h5><span>Riyadh, KSA</span></div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="padding:60px 0 30px">
+  <div class="container">
+    <div class="cta-band" data-aos="fade-up">
+      <div class="row align-items-center g-4 position-relative">
+        <div class="col-lg-8 px-4 px-lg-5">
+          <h2>Ready for your Kerala story?</h2>
+          <p>Tell us your dates and interests — we'll craft an itinerary within 24 hours. No pressure, no hidden fees.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end px-4 px-lg-5">
+          <a href="https://wa.me/918547301275?text=Hi%20Royal%20Khaleej%2C%20I%27d%20like%20to%20plan%20a%20Kerala%20trip." class="btn btn-wa btn-lg"><i class="fa-brands fa-whatsapp"></i> Book on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-5" data-aos="fade-right">
+        <span class="eyebrow">Get in Touch</span>
+        <h2 class="sec-title">Let's plan something <em>unforgettable</em>.</h2>
+        <p class="sec-sub mb-4">Reach us on WhatsApp for the quickest response, or drop your details and we'll come back to you within 24 hours.</p>
+
+        <div class="info-card"><div class="ico"><i class="fa-solid fa-location-dot"></i></div><div><h5>Office</h5><p>Near Cochin Airport, Opp. Bank of Baroda, Chakkungal Building, Sreemoolanagaram — 683580</p></div></div>
+        <div class="info-card"><div class="ico"><i class="fa-solid fa-phone"></i></div><div><h5>Mobile</h5><p>+91 8547301275 · +91 8848226085 · +91 8943128619</p></div></div>
+        <div class="info-card"><div class="ico"><i class="fa-solid fa-envelope"></i></div><div><h5>Email</h5><p>royalkhaleejholidays@gmail.com</p></div></div>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <form id="enquiryForm" class="p-4 p-md-5" style="background:#fff;border:1px solid var(--line);border-radius:20px">
+          <h3 class="mb-4">Send an Enquiry</h3>
+          <div class="row g-3">
+            <div class="col-md-6"><label class="form-label">Full Name</label><input required name="name" type="text" class="form-control" placeholder="Your name"></div>
+            <div class="col-md-6"><label class="form-label">Phone / WhatsApp</label><input required name="phone" type="tel" class="form-control" placeholder="+971 ..."></div>
+            <div class="col-md-6"><label class="form-label">Email</label><input name="email" type="email" class="form-control" placeholder="you@email.com"></div>
+            <div class="col-md-6"><label class="form-label">Interested In</label>
+              <select name="interest" class="form-select">
+                <option>Leisure Tour</option><option>Ayurveda Retreat</option><option>Houseboat Cruise</option>
+                <option>Medical Tourism</option><option>Trekking Tour</option><option>Grand Kerala Odyssey</option>
+              </select>
+            </div>
+            <div class="col-12"><label class="form-label">Tell us about your trip</label><textarea name="msg" rows="4" class="form-control" placeholder="Dates, group size, interests..."></textarea></div>
+            <div class="col-12 d-flex flex-wrap gap-2 mt-2">
+              <button type="submit" class="btn btn-brand"><i class="fa-brands fa-whatsapp"></i> Send via WhatsApp</button>
+              <a href="mailto:royalkhaleejholidays@gmail.com" class="btn btn-outline-brand"><i class="fa-regular fa-envelope"></i> Email Us</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <a class="navbar-brand mb-3" href="#home" style="color:#fff!important">
+          <img src="images/logo.png" alt="Royal Khaleej Holidays" style="height:52px">
+          <span style="color:#fff">Royal Khaleej<small style="color:rgba(255,255,255,.6)">Holidays</small></span>
+        </a>
+        <p style="font-size:14.5px;max-width:340px;margin-top:16px">Kerala-based travel house crafting premium journeys for guests from the Gulf and beyond. Proudly serving travellers since 2022.</p>
+        <div class="social mt-3">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://wa.me/918547301275"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2"><h5>Explore</h5><ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#packages">Packages</a></li></ul></div>
+      <div class="col-6 col-lg-3"><h5>Services</h5><ul><li><a href="#services">Tour Packages</a></li><li><a href="#services">Ayurveda Retreats</a></li><li><a href="#services">Medical Tourism</a></li><li><a href="#services">Private Houseboats</a></li></ul></div>
+      <div class="col-lg-3"><h5>Contact</h5><ul>
+        <li><i class="fa-solid fa-phone me-2 text-brand"></i> +91 8547301275</li>
+        <li><i class="fa-regular fa-envelope me-2 text-brand"></i> royalkhaleejholidays@gmail.com</li>
+        <li><i class="fa-solid fa-location-dot me-2 text-brand"></i> Ernakulam, Kerala, India</li>
+      </ul></div>
+    </div>
+    <div class="foot-bottom">© <span id="year"></span> Royal Khaleej Holidays. All rights reserved. · Crafted with care in Kerala.</div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FAB -->
+<a href="https://wa.me/918547301275?text=Hi%20Royal%20Khaleej%2C%20I%27d%20like%20to%20book%20a%20Kerala%20trip." class="wa-fab" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 900, once: true, offset: 80, easing: 'ease-out-cubic' });
+
+  // Navbar shadow on scroll
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  // Active nav link on scroll
+  const links = document.querySelectorAll('.nav-link');
+  const sections = [...links].map(l => document.querySelector(l.getAttribute('href'))).filter(Boolean);
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY + 120;
+    let cur = sections[0];
+    sections.forEach(s => { if (s && s.offsetTop <= y) cur = s; });
+    links.forEach(l => l.classList.toggle('active', cur && l.getAttribute('href') === '#' + cur.id));
+  });
+
+  // Year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Enquiry form → WhatsApp
+  document.getElementById('enquiryForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const f = e.target;
+    const msg =
+      `*New Enquiry — Royal Khaleej Holidays*%0A%0A` +
+      `*Name:* ${encodeURIComponent(f.name.value)}%0A` +
+      `*Phone:* ${encodeURIComponent(f.phone.value)}%0A` +
+      `*Email:* ${encodeURIComponent(f.email.value || '-')}%0A` +
+      `*Interested In:* ${encodeURIComponent(f.interest.value)}%0A` +
+      `*Message:* ${encodeURIComponent(f.msg.value || '-')}`;
+    window.open(`https://wa.me/918547301275?text=${msg}`, '_blank');
+  });
+
+
+
+  // Reveal-on-scroll for any .reveal elements
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }});
+  },{threshold:.15});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  // Count-up for hero stats (except the 2022 year)
+  const nums = document.querySelectorAll('.hero-stats .s h3');
+  const parseTarget = (t)=>{ const m=t.match(/[\d,]+/); return m?parseInt(m[0].replace(/,/g,''),10):null; };
+  nums.forEach(el=>{
+    const raw = el.textContent.trim();
+    const target = parseTarget(raw);
+    if(!target || raw === '2022') return;
+    const suffix = raw.replace(/[\d,]+/, '');
+    let cur = 0; const step = Math.max(1, Math.ceil(target/60));
+    const started = {v:false};
+    const obs = new IntersectionObserver((es)=>{
+      es.forEach(e=>{ if(e.isIntersecting && !started.v){ started.v=true;
+        const tick=()=>{ cur+=step; if(cur>=target){ el.textContent=target.toLocaleString()+suffix; } else { el.textContent=cur.toLocaleString()+suffix; requestAnimationFrame(tick);} };
+        tick(); obs.disconnect();
+      }});
+    },{threshold:.4});
+    obs.observe(el);
+  });
+
+  // Subtle parallax on hero background
+  const heroBg = document.querySelector('.hero-bg');
+  if(heroBg){ window.addEventListener('scroll',()=>{ const y=window.scrollY; if(y<800) heroBg.style.transform=`translateY(${y*0.25}px) scale(${1+y*0.0004})`; }); }
+
+  // Close mobile navbar on link click
+  document.querySelectorAll('#navMain .nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      const c = document.getElementById('navMain');
+      if (c.classList.contains('show')) new bootstrap.Collapse(c).hide();
+    });
+  });
+</script>
+</body>
+</html>
